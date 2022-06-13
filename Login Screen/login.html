@@ -1,0 +1,51 @@
+<!-- // Tre Howard // CSC102 // 6-2-22 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="loginScript.js"></script>  <!-- added javascript to html -->
+    <link rel="stylesheet" href="login_css.css"> <!-- added css to html -->
+    <title>Login</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>
+        <nav> 
+            <a href="D:\Program Files (x86)\Microsoft VS Code UAT Class\Final\Login Screen\login.html">Launch Site</a> |
+            <a href="D:\Program Files (x86)\Microsoft VS Code UAT Class\Final\BoardsObjective\BoardsObjective.html">Board Objective</a>
+
+        </nav>
+        </h1>
+    </header>
+
+
+
+    <h2 style="text-align: center;">Login</h2>   
+    <form name="RegForm" onsubmit="return countdownLogin()" method="post" action = "D:/Program Files (x86)/Microsoft VS Code UAT Class/Final/MainPage/main.html"> <!-- form for countdownLogin, aka the login page that after confirming credentials will load the main page for the space program -->
+                                                                           <!-- form also has .css to center and make it look nice (login_css.css) -->
+    <p>First Name: <input type="text" size="65" name="fName" /></p>
+    <br/>     
+    
+    <p>Last Name: <input type="text" size="65" name="lName" /></p>
+    <br/> 
+                 
+    <p>Student ID: <input type="text" size="65" name="studentID" /></p>
+    <br/>
+                 
+    <p>
+    <input type="submit" value="Submit" name="Submit" />
+    </p>
+
+
+
+
+</body>
+</html>
+
+
+

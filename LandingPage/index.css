@@ -1,0 +1,26 @@
+body {
+    background-position: top left;
+    background-size: 100% 100%;
+    background-image: url(landingpage_background.jpg);
+    background-attachment: fixed;
+}
+
+header {
+    position: absolute;
+    left: 800px;
+}
+
+
+
+h2 {
+    position: absolute;
+    left: 1200px;
+    top: 200px;
+    font-size: 60px;
+
+}
+
+p {
+ font-size: 20px;
+ width: 600px;
+}

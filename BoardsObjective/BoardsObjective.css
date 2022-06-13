@@ -1,0 +1,38 @@
+body {
+    background-position: top left;
+    background-size: 100% 100%;
+    background-image: url(BoardObjective_Background.jpg);
+    background-attachment: fixed;
+}
+
+header {
+    position: absolute;
+    left: 800px;
+}
+
+h2 {
+    position: absolute;
+    left: 350px;
+    top: 150px;
+    font-size:64px;
+    color: white;
+}
+
+h3 {
+    position: absolute;
+    left: 50px;
+    top: 350px;
+    font-size: 24px;
+    color: white;
+    width: 500px;
+
+}
+
+h4 {
+    position: absolute;
+    left: 550px;
+    top: 300px;
+    font-size: 24px;
+    color: white;
+    width: 500px;
+}

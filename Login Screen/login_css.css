@@ -1,0 +1,29 @@
+form {
+    margin: 0 auto;
+    width: 600px;
+}
+
+body {
+    background-color: royalblue;
+    background-position: top left;
+    background-size: cover;
+}
+
+header {
+    position: absolute;
+    left: 800px;
+}
+
+h2 {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    text-align: center;
+}
+
+form {
+    position: absolute;
+    top: 175px;
+    left: 720px;
+    text-align: center;
+}

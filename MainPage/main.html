@@ -1,0 +1,90 @@
+<!-- // Tre Howard // CSC102 // 6-11-22 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="StartStop.js"></script> <!-- added .js and .css to html -->
+    <link rel="stylesheet" href="main.css">
+    <title>Space Program</title>
+
+
+</head>
+<body>
+
+
+    <header>
+        <h1>
+        <nav> 
+            <a href="D:\Program Files (x86)\Microsoft VS Code UAT Class\Final\Login Screen\login.html">Launch Site</a> |
+            <a href="D:\Program Files (x86)\Microsoft VS Code UAT Class\Final\BoardsObjective\BoardsObjective.html">Board Objective</a>
+
+        </nav>
+        </h1>
+    </header>
+
+    <!-- added logo at top -->
+    <h2><img src="UATspaceLogo-2.jpg"></h2>
+
+
+    <!-- this is my new array table, i couldnt figure out how to get it to be a .js, everything i looked up seemed to be the html file, please let me know, i am massively confused -->
+    <h3>
+    <table id="spaceData">
+        <tr>
+            <th>Data Type</th>
+            <th>Reading</th>
+
+        </tr>
+
+    <script type="text/javascript">
+          var array =    [
+              ["Time Elapsed:","15 seconds",],                         
+              ["Latitude:","0",],                         
+              ["Longitude:","0",],  
+              ["GPS Altitude:","0",],                         
+              ["BMP Sensor Altitude:","30383.04",],
+              ["BMP Sensor Pressure:","2.34",],                         
+              ["BMP Sensor Temperature:","0",],                         
+              ["Digital Sensor Temperature:","24.12",],  
+              ["CSS Sensor Temperature:","25",],                         
+              ["CSS Sensor eC02:","400",],
+              ["CSS Sensor TVOC:","0",],                         
+              ["UV:","0",],                         
+              ["Accel X:","-0.87",],  
+              ["Accel Y:","-0.02",],                         
+              ["Accel Z:","9.61",],
+              ["Magnetic X:","0.13",],                         
+              ["Magnetic Y:","0.57",],                         
+              ["Magnetic Z:","-0.24",],  
+              ["Gyro X:","4.66",],                         
+              ["Gyro Y:","0.01",],
+              ["Gyro Z:","-0.4",],
+            ],
+                fetch = document.getElementById('spaceData');
+        for(var i=0; i <array.length; i++){
+            var newRow = fetch.insertRow(fetch.length);
+            for(var j=0; j<array[i].length; j++){
+                var cell = newRow.insertCell(j);
+                cell.innerHTML = array[i][j];
+            }
+        }
+    </script>
+    </h3>
+
+
+    <!-- stop button starts disabled, click start, disables itself and activates stop button, check StartStop.js -- ever since adding the new array above, this header seems to go above my graph, no idea why -->
+    <h4>
+        <button id="Start" onclick = "Start()">Start</button>
+        <button id="Stop" onclick = "Stop()" disabled>Stop</button>
+    </br>
+
+    </h4>
+
+    <h5><div id="countdownTimer"></div> </h5>
+
+
+</body>
+</html>
