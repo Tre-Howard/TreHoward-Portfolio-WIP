@@ -1,3 +1,2 @@
 # TreHoward.github.io
-Assignment: A Web Presence
-Start with index in landing page, should work from there!
+WIP: Creating a new website portfolio using HTML/Javascript/CSS to display my skills
